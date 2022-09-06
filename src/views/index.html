@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" >
-  <title>Servidor con Express y Socket.io!</title>
-</head>
-<body>
-  <h1>Funciona</h1>
-  <p id="text"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Websocket chat</title>
+  </head>
+  <body>
+    <header>Websocket chat</header>
 
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <main>
+      <div id="all-messages"></div>
+
+      <div>
+        <input type="text" id="message" />
+        <button type="button" id="send-message">Send</button>
+      </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
